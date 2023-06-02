@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: horizon;
+  src: url(assets/horizon.otf);
+}
+
+:root {
+  font-family: "horizon", sans-serif;
+  background: #fff;
+}
+/* @layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "horizon", sans-serif;
+  }
+} */
+@layer components {
+  .maxW {
+    @apply max-w-7xl mx-auto lg:px-10 sm:px-5 px-3;
+  }
+
+  .heroBg {
+    background: url("../src/assets/images/BG.jpg") no-repeat center center/cover;
+  }
+  .pageBg {
+    background: url("../src/assets/images/page.webp") no-repeat center
+      center;
+  }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
